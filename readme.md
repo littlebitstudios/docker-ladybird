@@ -2,6 +2,12 @@
 
 This repository contains files for packaging Ladybird Browser Alpha ([ladybirdbrowser/ladybird](https://github.com/ladybirdbrowser/ladybird)) into a Docker container using LinuxServer.io's base system.
 
+This repository is replicated on:
+- GitWorkshop: https://gitworkshop.dev/littlebitstudios.com/docker-ladybird
+- GitHub: https://github.com/littlebitstudios/docker-ladybird
+
+**This repository is managed by ngit. The only reason the .agents and .claude folders exist is to contain the ngit skill in case coding agents come across this repository.** If you want to contribute, you can send your PR or issue to GitHub anyway; I will sync any changes with ngit so they appear on GitWorkshop.
+
 ## Process
 
 The Dockerfile pulls Ladybird's repository information and installs using apt (which is why the Ubuntu Resolute version of the LSIO base system is used). All features in the published Ladybird Alpha are retained, including the feedback system. If you see problems that seem like they come from Ladybird, use the feedback button in Ladybird rather than complaining to me or LSIO.
