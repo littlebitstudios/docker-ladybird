@@ -1,0 +1,9 @@
+# This image only needs the Dockerfile and the overlay under root/
+# (see: COPY /root /). Deny by default so a local config/ or data/ bind-mount
+# can never be sent as build context.
+*
+
+!Dockerfile
+!.dockerignore
+!root
+!root/**

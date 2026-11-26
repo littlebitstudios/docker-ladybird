@@ -1,0 +1,41 @@
+# LSIO-style runtime persistence kept next to the Dockerfile when testing locally.
+# These are container state, not image sources.
+/config/
+/data/
+
+# Local secrets and compose customisations
+.env
+.env.*
+*.env
+!.env.example
+docker-compose.override.yml
+docker-compose.override.yaml
+compose.override.yml
+compose.override.yaml
+
+# Local build/runtime leftovers
+/*.log
+/*.tmp
+/*.bak
+
+# Editor and OS junk
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# LSIO CI artifact
+.jenkins-external
+
+# Note: .agents/ and .claude/ are intentionally tracked (see readme.md).
